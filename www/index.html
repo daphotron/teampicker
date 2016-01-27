@@ -20,14 +20,52 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
   </head>
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+      <ion-header-bar class="bar bar-header bar-dark">
+        <h1 class="title">Team Picker</h1>
       </ion-header-bar>
-      <ion-content>
+      <ion-content ng-controller="TeamsController">
+        <div class="row">
+          How many people do you have?
+        </div>
+        <div class="row row-center">
+          <div class="col">
+            <button class="button" on-tap="subtractPeople()">
+              - minus
+            </button>
+          </div>
+          <div class="col col-50 col-center">
+            {{peopleCount}} people
+          </div>
+          <div class="col">
+            <button class="button" on-tap="addPeople()">
+              + add
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          How many teams do you want?
+        </div>
+        <div class="row row-center">
+          <div class="col">
+            <button class="button" on-tap="subtractTeams()">
+              - minus
+            </button>
+          </div>
+          <div class="col col-50 col-center">
+            {{teamCount}} teams
+          </div>
+          <div class="col">
+            <button class="button" on-tap="addTeams()">
+              + add
+            </button>
+          </div>
+        </div>
       </ion-content>
     </ion-pane>
   </body>
