@@ -27,47 +27,57 @@
 
     <ion-pane>
       <ion-header-bar class="bar bar-header bar-dark">
-        <h1 class="title">Team Picker</h1>
+        <header class="header">
+          <h1 class="header-logo">
+            Team Picker
+          </h1>
+        </header>
       </ion-header-bar>
       <ion-content ng-controller="TeamsController">
-        <div class="row">
-          How many people do you have?
-        </div>
-        <div class="row row-center">
-          <div class="col">
-            <button class="button" on-tap="subtractPeople()">
-              - minus
-            </button>
+        <div class="container">
+          <div class="row align-center mvl">
+            <div class="grid-2">
+              <button class="left btn-control" on-tap="subtractPeople()">
+                <img src="../images/minus.png">
+              </button>
+            </div>
+            <div class="grid-8">
+              <!-- There are -->
+              <div class="h2">
+                4
+              </div>
+              <div class="h3">
+                people
+              </div>
+            </div>
+            <div class="grid-2">
+              <button class="right btn-control" on-tap="addPeople()">
+                <img src="../images/plus.png">
+              </button>
+            </div>
           </div>
-          <div class="col col-50 col-center">
-            {{peopleCount}} people
+          <div class="row align-center mvl">
+            <div class="grid-2">
+              <button class="left btn-control" on-tap="subtractTeams()">
+                <img src="../images/minus.png">
+              </button>
+            </div>
+            <div class="grid-8">
+              <!-- I want -->
+              <div class="h2">
+                2
+              </div>
+              <div class="h3">
+                teams
+              </div>
+            </div>
+            <div class="grid-2">
+              <button class="right btn-control" on-tap="addTeams()">
+                <img src="../images/plus.png">
+              </button>
+            </div>
           </div>
-          <div class="col">
-            <button class="button" on-tap="addPeople()">
-              + add
-            </button>
-          </div>
-        </div>
-        <div class="row">
-          How many teams do you want?
-        </div>
-        <div class="row row-center">
-          <div class="col">
-            <button class="button" on-tap="subtractTeams()">
-              - minus
-            </button>
-          </div>
-          <div class="col col-50 col-center">
-            {{teamCount}} teams
-          </div>
-          <div class="col">
-            <button class="button" on-tap="addTeams()">
-              + add
-            </button>
-          </div>
-        </div>
-        <div class="row">
-          <button class="button button-full button-balanced" on-tap="startPicking()">
+          <button class="btn btn-full mtm">
             Start Picking
           </button>
         </div>

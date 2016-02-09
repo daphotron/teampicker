@@ -1,0 +1,211 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  @media (min-width: 700px) {
+    padding: 0;
+  }
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media (min-width: 400px) {
+  .grid-1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  .grid-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .grid-2:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .grid-3:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .grid-4:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-5 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+  }
+  .grid-5:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-6 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .grid-6:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-7 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+  }
+  .grid-7:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-8 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  .grid-8:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-9 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .grid-9:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-10 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .grid-10:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-11 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+  }
+  .grid-11:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .grid-12 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .grid-12:last-child {
+    margin-right: 0;
+  }
+}
+
+
+// flexible columns
+
+.span3 {
+  display: block;
+  @media (min-width: $bp-small) {
+    // 2 col
+    float: left;
+    margin-right: 2%;
+    width: 48%;
+  }
+  @media (min-width: $bp-medium) {
+    // 3 col
+    width: 32%;
+  }
+}
+// first of 2
+.span3:nth-child(2n+1) {
+  @media (min-width: $bp-small) and (max-width: $bp-medium) {
+    clear: left;
+  }
+}
+// last of 2
+.span3:nth-child(2n) {
+  @media (min-width: $bp-small) and (max-width: $bp-medium) {
+    margin-right: 0;
+  }
+}
+
+// first of 3
+.span3:nth-child(3n+1) {
+  @media (min-width: $bp-medium) {
+    clear: left;
+  }
+}
+// last of 3
+.span3:nth-child(3n) {
+  @media (min-width: $bp-medium) {
+    margin-right: 0;
+  }
+}

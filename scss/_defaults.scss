@@ -1,0 +1,36 @@
+
+body {
+  background: #0e0e0e;
+  color: #f1f1f1;
+  font-size: 1em;
+  font-family: 'visitor', sans-serif; 
+  letter-spacing: 1px;
+  text-align: center;
+  @media (min-width: $bp-wide) {
+    font-size: 1.2em;
+  }
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+h1, .h1 {  
+  font-size: $h1;
+}
+h2, .h2 {  
+  font-size: $h2;
+}
+h3, .h3 {  
+  font-size: $h3;
+}
+h4, .h4 {  
+  font-size: $h4;
+}
+
+small, 
+.font_small {
+  font-size: $hxs;
+}

@@ -1,0 +1,30 @@
+
+// Fonts
+$h1: 2.074em;
+$h2: 1.728em;
+$h3: 1.44em;
+$h4: 1.2em;
+$hxs: 0.833em;
+
+// Colors
+$green: #34D233;
+$lightgreen: #3AF738;
+$purple: #6E4DB0;
+$lightpurple: #9A68FF;
+
+$color-border-soft: $lightgreen;
+
+
+// Breakpoints
+$em-base: 16px;
+$bp-widest: 900px/$em-base + 0em;
+$bp-wide: 700px/$em-base + 0em;
+$bp-medium: 500px/$em-base + 0em;
+$bp-small: 300px/$em-base + 0em;
+
+// Spacers
+$space-l: 2em;
+$space-m: 1.5em;
+$space-n: 1em;
+$space-s: 0.5em;
+$space-xs: 0.25em;
