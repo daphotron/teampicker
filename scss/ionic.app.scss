@@ -22,4 +22,40 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 
+@font-face {
+    font-family: 'visitor';
+    src: url('../fonts/visitor-tt1--brk--webfont.eot');
+    src: url('../fonts/visitor-tt1--brk--webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/visitor-tt1--brk--webfont.woff2') format('woff2'),
+         url('../fonts/visitor-tt1--brk--webfont.woff') format('woff'),
+         url('../fonts/visitor-tt1--brk--webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+// OVERRIDES
+// ===============================================================
+.pane, input, button, select, textarea,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'visitor', sans-serif;
+}
+// ===============================================================
 
+.pane {
+  background: #0e0e0e;
+  color: #f1f1f1;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-align: center;
+  @media (min-width: 700px) {
+    font-size: 1.2em;
+  }
+}
+
+// HEADER
+.bar-super-dark {
+  background: #0e0e0e;
+  border-bottom: 0;
+  .title {
+    color: #f1f1f1;
+  }
+}
