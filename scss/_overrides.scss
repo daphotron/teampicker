@@ -1,0 +1,27 @@
+
+// OVERRIDES
+// ===============================================================
+.pane, input, button, select, textarea,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'visitor', sans-serif;
+}
+
+.pane {
+  background: #0e0e0e;
+  color: #f1f1f1;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-align: center;
+  @media (min-width: 700px) {
+    font-size: 1.2em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #f1f1f1;
+}
+
+.button.button-balanced {
+  font-size: $h3;
+}
+// ===============================================================
