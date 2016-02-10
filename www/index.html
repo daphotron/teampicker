@@ -21,64 +21,27 @@
 
   </head>
   <body ng-app="starter">
-
-    <ion-pane>
-      <ion-header-bar class="bar bar-header bar-super-dark">
-        <div class="header container">
-          <h1 class="title header-logo">
-            Team Picker
-          </h1>
-        </div>
-      </ion-header-bar>
-      <ion-content ng-controller="TeamsController">
-        <div class="container">
-          <div class="row row-center mvm">
-            <div class="col">
-              <button class="button btn-control" on-tap="subtractPeople()">
-                <img src="../img/minus.png">
-              </button>
-            </div>
-            <div class="col col-50 col-center">
-              <div class="h2">
-                {{peopleCount}}
-              </div>
-              <div class="h4">
-                people
-              </div>
-            </div>
-            <div class="col">
-              <button class="right button btn-control" on-tap="addPeople()">
-                <img src="../img/plus.png">
-              </button>
-            </div>
-          </div>
-          <div class="row row-center mvm">
-            <div class="col">
-              <button class="button btn-control" on-tap="subtractTeams()">
-                <img src="../img/minus.png">
-              </button>
-            </div>
-            <div class="col col-50 col-center">
-              <div class="h2">
-                {{teamCount}}
-              </div>
-              <div class="h4">
-                teams
-              </div>
-            </div>
-            <div class="col">
-              <button class="right button btn-control" on-tap="addTeams()">
-                <img src="../img/plus.png">
-              </button>
-            </div>
-          </div>
-          <div class="row">
-            <button class="button button-full button-balanced" on-tap="startPicking()">
-              Start Picking
-            </button>
-          </div>
-        </div>
-      </ion-content>
-    </ion-pane>
+<!--
+    <ion-header-bar class="bar bar-header bar-super-dark">
+      <div class="header container">
+        <h1 class="title header-logo">
+          Team Picker
+        </h1>
+      </div>
+    </ion-header-bar>
+-->
+    <!--
+    <ion-nav-bar class="nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">
+            Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+-->
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view name="mainContent" cache-view="false"></ion-nav-view>
   </body>
 </html>

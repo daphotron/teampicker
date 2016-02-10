@@ -173,39 +173,40 @@ html {
 
 .span3 {
   display: block;
-  @media (min-width: $bp-small) {
+  @media (min-width: $bp-medium) {
     // 2 col
     float: left;
     margin-right: 2%;
     width: 48%;
   }
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     // 3 col
+    margin-right: 2%;
     width: 32%;
   }
 }
 // first of 2
 .span3:nth-child(2n+1) {
-  @media (min-width: $bp-small) and (max-width: $bp-medium) {
+  @media (min-width: $bp-medium) and (max-width: $bp-large) {
     clear: left;
   }
 }
 // last of 2
 .span3:nth-child(2n) {
-  @media (min-width: $bp-small) and (max-width: $bp-medium) {
+  @media (min-width: $bp-medium) and (max-width: $bp-large) {
     margin-right: 0;
   }
 }
 
 // first of 3
 .span3:nth-child(3n+1) {
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     clear: left;
   }
 }
 // last of 3
 .span3:nth-child(3n) {
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     margin-right: 0;
   }
 }

@@ -22,3 +22,29 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+
+  .state('home', {
+    url: '/',
+    views: {
+      "mainContent": {
+        templateUrl: 'templates/home.html',
+        controller: 'TeamsController'
+      }
+    }
+  })
+
+  .state('secondary', {
+    url: '/secondary',
+    views: {
+      "mainContent": {
+        templateUrl: 'templates/secondary.html',
+        controller: 'SecondaryCtrl'
+      }
+    }
+  })
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/');
+});

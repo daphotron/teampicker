@@ -9778,6 +9778,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #f1f1f1; }
 
+.button.button-balanced {
+  font-size: 1.44em; }
+
 .hidden {
   display: none; }
 
@@ -10251,6 +10254,7 @@ html {
       width: 48%; } }
   @media (min-width: 31.25em) {
     .span3 {
+      margin-right: 2%;
       width: 32%; } }
 
 @media (min-width: 18.75em) and (max-width: 31.25em) {
@@ -10277,6 +10281,7 @@ html {
 
 .bar .header-logo {
   background: transparent url("../img/bg-header.png") repeat-x top left;
+  background-size: 20%;
   font-size: 1.728em;
   letter-spacing: 2px;
   text-shadow: #34D233 2px 2px 3px; }
@@ -10287,11 +10292,12 @@ html {
   background-color: #34D233;
   color: #fff;
   display: block;
-  font-size: 1.728em;
-  padding: 0.75em 1.2em; }
+  font-size: 1.44em;
+  padding: 0.5em 1.2em; }
   .btn:hover {
     border-color: #22f61f;
-    background-color: #27ac26; }
+    background-color: #27ac26;
+    color: #fff; }
 
 .btn-secondary {
   border: 3px solid #9A68FF;
@@ -10309,9 +10315,7 @@ html {
   border-radius: 0;
   background-color: #6E4DB0;
   color: #fff;
-  display: block;
-  height: 4em;
-  width: 4em; }
+  padding-top: 13px; }
   .btn-control:hover {
     border-color: #894fff;
     background-color: #583d8d; }
@@ -10323,11 +10327,9 @@ html {
   margin: 0;
   padding: 0; }
   .li-none li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
+    list-style: none; }
 
-.card {
+.rcard {
   background: #9A68FF url("../images/bg-header.png");
   background-size: 50%;
   border: 5px solid #fff;

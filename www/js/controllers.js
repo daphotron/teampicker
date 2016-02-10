@@ -1,6 +1,5 @@
 angular.module('starter.controllers', [])
 .controller('TeamsController', function($scope) {
-  console.log('hi');
   $scope.peopleCount = 4;
   $scope.teamCount = 2;
 
@@ -23,4 +22,7 @@ angular.module('starter.controllers', [])
   $scope.addTeams = function() {
     $scope.teamCount++;
   };
-});
+})
+
+.controller('SecondaryCtrl', function($scope) {
+})
