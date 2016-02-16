@@ -21,7 +21,10 @@ $ ionic emulate ios
 * Pick number of people 
 * Pick number of teams
 - Click Start Picking
-- Card Picking
+- Number of backfacing cards match the number of people
+- Number of frontfacing card colors match the number of teams
+- Selecting a card shows user the color they selected
+- Restart
 
 ## Bugs
 
