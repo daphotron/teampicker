@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row row-center mvm">
         <div class="col">
-          <button class="button btn-control" on-tap="subtractPeople()">
+          <button class="left button btn-control" on-tap="subtractPeople()">
             <img src="../img/minus.png">
           </button>
         </div>
         <div class="col col-50 col-center">
           <div class="h2">
-            {{peopleCount}}
+            {{ numberOfPeople() }}
           </div>
           <div class="h4">
             people
@@ -23,13 +23,13 @@
       </div>
       <div class="row row-center mvm">
         <div class="col">
-          <button class="button btn-control" on-tap="subtractTeams()">
+          <button class="left button btn-control" on-tap="subtractTeams()">
             <img src="../img/minus.png">
           </button>
         </div>
         <div class="col col-50 col-center">
           <div class="h2">
-            {{teamCount}}
+            {{ numberOfTeams() }}
           </div>
           <div class="h4">
             teams

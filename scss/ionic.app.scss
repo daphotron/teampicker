@@ -119,7 +119,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   margin: $space-n auto;
   width: 110px;
 }
-
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
 
 .animated {
   -webkit-animation-duration: 1s;

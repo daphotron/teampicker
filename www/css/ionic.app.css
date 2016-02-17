@@ -10247,29 +10247,29 @@ html {
 
 .span3 {
   display: block; }
-  @media (min-width: 18.75em) {
+  @media (min-width: 31.25em) {
     .span3 {
       float: left;
       margin-right: 2%;
       width: 48%; } }
-  @media (min-width: 31.25em) {
+  @media (min-width: 56.25em) {
     .span3 {
       margin-right: 2%;
       width: 32%; } }
 
-@media (min-width: 18.75em) and (max-width: 31.25em) {
+@media (min-width: 31.25em) and (max-width: 56.25em) {
   .span3:nth-child(2n+1) {
     clear: left; } }
 
-@media (min-width: 18.75em) and (max-width: 31.25em) {
+@media (min-width: 31.25em) and (max-width: 56.25em) {
   .span3:nth-child(2n) {
     margin-right: 0; } }
 
-@media (min-width: 31.25em) {
+@media (min-width: 56.25em) {
   .span3:nth-child(3n+1) {
     clear: left; } }
 
-@media (min-width: 31.25em) {
+@media (min-width: 56.25em) {
   .span3:nth-child(3n) {
     margin-right: 0; } }
 
@@ -10337,6 +10337,12 @@ html {
   height: 140px;
   margin: 1em auto;
   width: 110px; }
+
+.red {
+  background: red; }
+
+.blue {
+  background: blue; }
 
 .animated {
   -webkit-animation-duration: 1s;

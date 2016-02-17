@@ -1,28 +1,79 @@
 angular.module('starter.controllers', [])
-.controller('TeamsController', function($scope) {
-  $scope.peopleCount = 4;
-  $scope.teamCount = 2;
+.controller('TeamsController', function($scope, CardsService) {
+  $scope.$on('$stateChangeStart', function(scope, next, current){
+    CardsService.updateCards();
+  });
 
   $scope.subtractPeople = function() {
-    if ($scope.peopleCount > 2) {
-      $scope.peopleCount--;
+    if (CardsService.numberOfPeople > 2) {
+      CardsService.numberOfPeople--;
     }
   };
 
+  $scope.numberOfTeams = function(){
+    return CardsService.numberOfTeams;
+  };
+
+  $scope.numberOfPeople = function(){
+    return CardsService.numberOfPeople;
+  };
+
   $scope.addPeople = function() {
-    $scope.peopleCount++;
+    CardsService.numberOfPeople++;
   };
 
   $scope.subtractTeams = function() {
-    if ($scope.teamCount > 2) {
-      $scope.teamCount--;
+    if (CardsService.numberOfTeams > 2) {
+      CardsService.numberOfTeams--;
     }
   };
 
   $scope.addTeams = function() {
-    $scope.teamCount++;
+    CardsService.numberOfTeams++;
   };
 })
+.service('CardsService', function() {
+  this.numberOfPeople = 4;
+  this.numberOfTeams = 2;
 
-.controller('SecondaryCtrl', function($scope) {
+  this.colors = ['red', 'blue'];
+  this.cards = [];
+
+  this.updateCards = function(){
+    this.cards = [];
+    var cardsPerColor = this.numberOfPeople / this.numberOfTeams;
+    for (i = 0; i <= cardsPerColor; i++) {
+      this.cards.push({color: 'red', revealed: false});
+      this.cards.push({color: 'blue', revealed: false});
+    }
+
+    if (this.cards.length > this.numberOfPeople){
+      this.cards.pop();
+    }
+    shuffle(this.cards);
+  };
+
+  function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+  }
+})
+.controller('SecondaryCtrl', function($scope, CardsService) {
+  CardsService.updateCards();
+
+  $scope.cards = function(){
+    return CardsService.cards;
+  };
+
+  $scope.numberOfTeams = function(){
+    return CardsService.numberOfTeams;
+  };
+
+  $scope.numberOfPeople = function(){
+    return CardsService.numberOfPeople;
+  };
+
+  $scope.revealCard = function(card) {
+    card.revealed = true;
+  }
 })
