@@ -5,10 +5,9 @@
         Pick a card. <br>Then pass the deck.
       </h1>
       <div class="row align-center mvs">
-        <ul class="li-none">
-          <li class="span3 align-center" ng-repeat="card in cards()">
+        <ul class="li-none li-inline">
+          <li class="align-center" ng-repeat="card in cards()">
             <div class="rcard animated flipInX {{ card.revealed ? card.color : '' }}" on-tap="revealCard(card)">
-              {{ card.revealed }}
             </div>
           </li>
         </ul>

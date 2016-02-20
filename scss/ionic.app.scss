@@ -26,78 +26,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "defaults";
 @import "overrides";
 @import "toolbox";
+@import "animations";
 @import "layout";
+@import "header_footer";
+@import "buttons";
 
-
-// HEADER
-.bar-super-dark {
-  background: #0e0e0e;
-  border-bottom: 0;
-  .title {
-    color: #f1f1f1;
-  }
-}
-
-
-// header
-.bar .header-logo {
-  background: transparent url('../img/bg-header.png') repeat-x top left;
-  background-size: 20%;
-  font-size: $h2;
-  letter-spacing: 2px;
-  text-shadow: $green 2px 2px 3px;
-}
-
-// buttons
-.btn {
-  border: 5px solid $lightgreen;
-  border-radius: 0;
-  background-color: $green;
-  color: #fff;
-  display: block;
-  font-size: $h3;
-  padding: 0.5em 1.2em;
-
-  &:hover {
-    border-color: darken($lightgreen, 5%);
-    background-color: darken($green, 10%);
-    color: #fff;
-  }
-}
-
-.btn-secondary {
-  border: 3px solid $lightpurple;
-  border-radius: 0;
-  background-color: $purple;
-  color: #fff;
-  display: block;
-  padding: 1em;
-
-  &:hover {
-    border-color: darken($lightpurple, 5%);
-    background-color: darken($purple, 10%);
-  }
-}
-
-.btn-control {
-  border: 3px solid $lightpurple;
-  border-radius: 0;
-  background-color: $purple;
-  color: #fff;
-  padding-top: 13px;
-
-  &:hover {
-    border-color: darken($lightpurple, 5%);
-    background-color: darken($purple, 10%);
-  }
-
-  img {
-  }
-}
-
-.btn-full {
-  width: 100%;
-}
 
 // lists
 .li-none {
@@ -108,6 +41,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     list-style: none;
   }
 }
+.li-inline li {
+  display: inline-block;
+}
 
 // Cards
 .rcard {
@@ -116,7 +52,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   border: 5px solid #fff;
   border-radius: 4px;
   height: 140px;
-  margin: $space-n auto;
+  margin: $space-s;
   width: 110px;
 }
 .red {
@@ -124,85 +60,4 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 .blue {
   background: blue;
-}
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-@-webkit-keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-.flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
 }
