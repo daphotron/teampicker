@@ -1,19 +1,29 @@
 <ion-pane>
   <ion-content ng-controller="SecondaryCtrl">
     <div class="container">
-      <h1 class="h3 mtn mbm">
-        Pick a card. <br>Then pass the deck.
-      </h1>
+      <div class="mtm">
+        <h1 class="h3 mbn">
+          Pick a card, pass it around.
+        </h1>
+      </div>
       <div class="row align-center mvs">
-        <ul class="li-none li-inline">
+        <ul class="li-none li-inline center">
           <li class="align-center" ng-repeat="card in cards()">
             <div class="rcard animated flipInX {{ card.revealed ? card.color : '' }}" on-tap="revealCard(card)">
             </div>
           </li>
         </ul>
       </div>
-      <div class="mtm">
+      <div class="mtm mbl">
         There are {{ numberOfPeople() }} people and {{ numberOfTeams() }} teams.
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- on-tap="startPicking()" -->
+          <button class="btn btn-full" nav-direction="backward" ui-sref="home">
+            Restart
+          </button>
+        </div>
       </div>
     </div>
   </ion-content>

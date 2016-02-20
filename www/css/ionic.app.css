@@ -9807,6 +9807,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .inline-block {
   display: inline-block; }
 
+.center {
+  margin: auto; }
+
 .align-center {
   text-align: center; }
 
@@ -10433,10 +10436,10 @@ html {
   animation-name: flipInY; }
 
 .li-none {
-  margin: 0;
   padding: 0; }
   .li-none li {
-    list-style: none; }
+    list-style: none;
+    margin: 0; }
 
 .li-inline li {
   display: inline-block; }
