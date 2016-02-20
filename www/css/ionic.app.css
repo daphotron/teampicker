@@ -10295,32 +10295,28 @@ html {
   color: #fff;
   display: block;
   font-size: 1.44em;
-  padding: 0.5em 1.2em; }
+  padding: 0.5em 1.2em;
+  text-shadow: 1px 1px 3px #333; }
   .btn:hover {
     border-color: #22f61f;
     background-color: #27ac26;
     color: #fff; }
-
-.btn-secondary {
-  border: 3px solid #9A68FF;
-  border-radius: 0;
-  background-color: #6E4DB0;
-  color: #fff;
-  display: block;
-  padding: 1em; }
-  .btn-secondary:hover {
-    border-color: #894fff;
-    background-color: #583d8d; }
 
 .btn-control {
   border: 3px solid #9A68FF;
   border-radius: 0;
   background-color: #6E4DB0;
   color: #fff;
-  padding-top: 13px; }
-  .btn-control:hover {
+  font-size: 4em;
+  height: 70px;
+  line-height: 60px;
+  padding: 0 0 0 6px;
+  text-shadow: 1px 1px 3px #333;
+  width: 70px; }
+  .btn-control:hover, .btn-control:focus, .btn-control:active {
     border-color: #894fff;
-    background-color: #583d8d; }
+    background-color: #583d8d;
+    color: #fff; }
 
 .btn-full {
   width: 100%; }

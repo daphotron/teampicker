@@ -8,6 +8,7 @@
   display: block;
   font-size: $h3;
   padding: 0.5em 1.2em;
+  text-shadow: 1px 1px 3px #333;
 
   &:hover {
     border-color: darken($lightgreen, 5%);
@@ -16,30 +17,24 @@
   }
 }
 
-.btn-secondary {
-  border: 3px solid $lightpurple;
-  border-radius: 0;
-  background-color: $purple;
-  color: #fff;
-  display: block;
-  padding: 1em;
-
-  &:hover {
-    border-color: darken($lightpurple, 5%);
-    background-color: darken($purple, 10%);
-  }
-}
-
 .btn-control {
   border: 3px solid $lightpurple;
   border-radius: 0;
   background-color: $purple;
   color: #fff;
-  padding-top: 13px;
+  font-size: 4em;
+  height: 70px;
+  line-height: 60px;
+  padding: 0 0 0 6px;
+  text-shadow: 1px 1px 3px #333;
+  width: 70px;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-color: darken($lightpurple, 5%);
     background-color: darken($purple, 10%);
+    color: #fff;
   }
 
   img {
