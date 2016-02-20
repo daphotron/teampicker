@@ -16,17 +16,21 @@ $ ionic emulate ios
 ```
 
 ## Functionality
-
-* Start the app
-* Pick number of people 
-* Pick number of teams
-- Click Start Picking
-- Number of backfacing cards match the number of people
-- Number of frontfacing card colors match the number of teams
-- Selecting a card shows user the color they selected
-- Restart
+- ~~Start the app~~
+- ~~Pick number of people~~
+- ~~Pick number of teams~~
+- ~~Click Start Picking~~
+- ~~Number of backfacing cards match the number of people~~
+- ~~Selecting a card shows user the color they selected~~
+- Number of frontfacing card colors match the number of teams, 10 teams maximum
+- Restart from defaults
+- Restart remembering previously selected number of people and teams
+- Selecting a card again flips the card back over again
 
 ## Bugs
-
 - number of teams should not exceed number of people / 2
 
+## Design
+- 3 card wide column
+- Center cards responsively
+- Improve animations upon selection
