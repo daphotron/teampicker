@@ -26,10 +26,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "defaults";
 @import "overrides";
 @import "toolbox";
-@import "animations";
 @import "layout";
 @import "header_footer";
 @import "buttons";
+@import "animations";
 
 
 // lists
@@ -47,8 +47,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Cards
 .rcard {
-  background: $lightpurple url('../images/bg-header.png');
-  background-size: 50%;
+  background: $lightpurple;
   border: 5px solid #fff;
   border-radius: 4px;
   height: 140px;

@@ -9,11 +9,11 @@ html {
 }
 
 .container {
-  max-width: 25em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 .25em;
+  padding: 0 .2em;
   @media (min-width: 700px) {
+    max-width: 25em;
     padding: 0;
   }
 }

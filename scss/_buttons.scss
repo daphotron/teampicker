@@ -1,0 +1,51 @@
+
+// buttons
+.btn {
+  border: 5px solid $lightgreen;
+  border-radius: 0;
+  background-color: $green;
+  color: #fff;
+  display: block;
+  font-size: $h3;
+  padding: 0.5em 1.2em;
+
+  &:hover {
+    border-color: darken($lightgreen, 5%);
+    background-color: darken($green, 10%);
+    color: #fff;
+  }
+}
+
+.btn-secondary {
+  border: 3px solid $lightpurple;
+  border-radius: 0;
+  background-color: $purple;
+  color: #fff;
+  display: block;
+  padding: 1em;
+
+  &:hover {
+    border-color: darken($lightpurple, 5%);
+    background-color: darken($purple, 10%);
+  }
+}
+
+.btn-control {
+  border: 3px solid $lightpurple;
+  border-radius: 0;
+  background-color: $purple;
+  color: #fff;
+  padding-top: 13px;
+
+  &:hover {
+    border-color: darken($lightpurple, 5%);
+    background-color: darken($purple, 10%);
+  }
+
+  img {
+  }
+}
+
+.btn-full {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+// HEADER
+.bar-super-dark {
+  background: #0e0e0e;
+  border-bottom: 0;
+  .title {
+    color: #f1f1f1;
+  }
+}
+
+
+// header
+.bar .header-logo {
+  background: transparent url('../img/bg-header.png') repeat-x top left;
+  font-size: $h2;
+  letter-spacing: 2px;
+  text-shadow: $green 2px 2px 3px;
+}
