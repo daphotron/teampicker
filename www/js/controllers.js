@@ -29,7 +29,9 @@ angular.module('starter.controllers', [])
   };
 
   $scope.addTeams = function() {
-    CardsService.numberOfTeams++;
+    if (CardsService.numberOfTeams < 6) {
+      CardsService.numberOfTeams++;
+    }
   };
 })
 .service('CardsService', function() {
