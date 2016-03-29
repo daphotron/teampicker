@@ -29,7 +29,7 @@ angular.module('starter.controllers', [])
   };
 
   $scope.addTeams = function() {
-    if (CardsService.numberOfTeams < 6) {
+    if (CardsService.numberOfTeams < CardsService.colors.length) {
       CardsService.numberOfTeams++;
     }
   };
@@ -38,7 +38,7 @@ angular.module('starter.controllers', [])
   this.numberOfPeople = 4;
   this.numberOfTeams = 2;
 
-  this.colors = ['red', 'blue', 'green', 'aliceblue', 'yellow', 'turquoise'];
+  this.colors = ['red', 'blue', 'green', 'aliceblue', 'orange', 'yellow', 'turquoise'];
   this.cards = [];
 
   this.updateCards = function() {
