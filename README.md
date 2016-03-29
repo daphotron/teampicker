@@ -26,7 +26,8 @@ $ ionic emulate ios
 - Selecting a card shows user the name of color they selected
 - Restart from defaults
 - Restart remembering previously selected number of people and teams
-- Selecting a card again flips the card back over again
+- ~~Selecting a card again flips the card back over again~~
+- Disable increment/decrement buttons when they can't be clicked further
 
 ## Bugs
 - number of teams should not exceed number of people / 2
