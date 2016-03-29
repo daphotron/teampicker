@@ -73,6 +73,6 @@ angular.module('starter.controllers', [])
   };
 
   $scope.revealCard = function(card) {
-    card.revealed = true;
+    card.revealed = !card.revealed;
   }
 })
