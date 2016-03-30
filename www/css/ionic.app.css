@@ -10446,25 +10446,37 @@ html {
   border-radius: 4px;
   height: 140px;
   margin: 0.5em;
+  position: relative;
   width: 100px; }
 
+.rcard-color {
+  border: 1px solid #bbb;
+  color: #222;
+  display: none;
+  height: 130px;
+  left: 0;
+  padding: 20px 5px 0;
+  position: absolute;
+  text-align: center;
+  top: 0; }
+
+.active .rcard-color {
+  display: block; }
+
 .active.red {
-  background: red; }
+  background: #f4c8c8; }
 
 .active.blue {
-  background: blue; }
+  background: #C7EEF5; }
 
 .active.green {
-  background: green; }
-
-.active.aliceblue {
-  background: aliceblue; }
+  background: #D6F5C7; }
 
 .active.yellow {
-  background: yellow; }
+  background: #F0F68E; }
 
-.active.turquoise {
-  background: turquoise; }
+.active.turquoiz {
+  background: #89E6DC; }
 
 .active.orange {
-  background: orange; }
+  background: #F5E1C7; }

@@ -38,7 +38,7 @@ angular.module('starter.controllers', [])
   this.numberOfPeople = 4;
   this.numberOfTeams = 2;
 
-  this.colors = ['red', 'blue', 'green', 'aliceblue', 'orange', 'yellow', 'turquoise'];
+  this.colors = ['red', 'blue', 'green', 'yellow', 'turquoiz', 'orange'];
   this.cards = [];
 
   this.updateCards = function() {
