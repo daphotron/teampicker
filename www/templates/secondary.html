@@ -3,13 +3,13 @@
     <div class="container">
       <div class="mtm">
         <h1 class="h3 mbn">
-          Pick a card, pass it around.
+          Tap a card to find out what team you're on.
         </h1>
       </div>
       <div class="row align-center mvs">
         <ul class="li-none li-inline center">
           <li class="align-center" ng-repeat="card in cards()">
-            <div class="rcard animated flipInX {{ card.revealed ? card.color : '' }}" on-tap="revealCard(card)">
+            <div class="rcard animated flipInX {{card.color}} {{ card.revealed ? 'active flipInY' : '' }}" on-tap="revealCard(card)">
             </div>
           </li>
         </ul>
