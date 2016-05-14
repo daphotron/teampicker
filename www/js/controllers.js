@@ -38,11 +38,12 @@ angular.module('starter.controllers', [])
   this.numberOfPeople = 4;
   this.numberOfTeams = 2;
 
-  this.colors = ['red', 'blue', 'green', 'yellow', 'turquoiz', 'orange'];
+  this.colors = ['turquoiz', 'violet', 'red', 'blue', 'green', 'salmon', 'pink', 'orange', 'yellow', 'purple'];
   this.cards = [];
 
   this.updateCards = function() {
     this.cards = [];
+    this.colors = shuffle(this.colors);
     var cardsPerColor = this.numberOfPeople / this.numberOfTeams;
     for (i = 0; i < this.numberOfPeople; i++) {
       this.cards.push({color: this.colors[i % this.numberOfTeams], revealed: false});
