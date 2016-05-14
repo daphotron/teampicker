@@ -10284,6 +10284,7 @@ html {
 
 .bar .header-logo {
   background: transparent url("../img/logo.png") no-repeat center bottom;
+  background-size: 200px;
   font-size: 1.728em;
   letter-spacing: 2px;
   text-shadow: #34D233 2px 2px 3px; }
@@ -10306,6 +10307,7 @@ html {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 60%;
   border: 3px solid #9A68FF;
   border-radius: 0;
   background-color: #6E4DB0;
