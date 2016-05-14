@@ -18,6 +18,9 @@
 }
 
 .btn-control {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
   border: 3px solid $lightpurple;
   border-radius: 0;
   background-color: $purple;
@@ -40,7 +43,12 @@
   img {
   }
 }
-
+.btn-control-minus {
+  background-image: url('../img/minus.png');
+}
+.btn-control-plus {
+  background-image: url('../img/plus.png');
+}
 .btn-full {
   width: 100%;
 }

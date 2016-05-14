@@ -3,41 +3,37 @@
     <div class="container">
       <div class="row row-center mvm">
         <div class="col">
-          <button class="left button btn-control" on-tap="subtractPeople()">
-            -
+          <button class="left button btn-control btn-control-minus" on-tap="subtractPeople()">
           </button>
         </div>
         <div class="col col-50 col-center">
-          <div class="h2">
-            {{ numberOfPeople() }}
+          <div>
+            I have
           </div>
-          <div class="h4">
-            people
+          <div class="h2">
+            {{ numberOfPeople() }} people
           </div>
         </div>
         <div class="col">
-          <button class="right button btn-control" on-tap="addPeople()">
-            +
+          <button class="right button btn-control btn-control-plus" on-tap="addPeople()">
           </button>
         </div>
       </div>
       <div class="row row-center mvm">
         <div class="col">
-          <button class="left button btn-control" on-tap="subtractTeams()">
-            -
+          <button class="left button btn-control btn-control-minus" on-tap="subtractTeams()">
           </button>
         </div>
         <div class="col col-50 col-center">
-          <div class="h2">
-            {{ numberOfTeams() }}
+          <div>
+            Split us into
           </div>
-          <div class="h4">
-            teams
+          <div class="h2">
+            {{ numberOfTeams() }} teams
           </div>
         </div>
         <div class="col">
-          <button class="right button btn-control" on-tap="addTeams()">
-            +
+          <button class="right button btn-control btn-control-plus" on-tap="addTeams()">
           </button>
         </div>
       </div>

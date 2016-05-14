@@ -10283,7 +10283,7 @@ html {
     color: #f1f1f1; }
 
 .bar .header-logo {
-  background: transparent url("../img/bg-header.png") repeat-x top left;
+  background: transparent url("../img/logo.png") no-repeat center bottom;
   font-size: 1.728em;
   letter-spacing: 2px;
   text-shadow: #34D233 2px 2px 3px; }
@@ -10303,6 +10303,9 @@ html {
     color: #fff; }
 
 .btn-control {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
   border: 3px solid #9A68FF;
   border-radius: 0;
   background-color: #6E4DB0;
@@ -10317,6 +10320,12 @@ html {
     border-color: #894fff;
     background-color: #583d8d;
     color: #fff; }
+
+.btn-control-minus {
+  background-image: url("../img/minus.png"); }
+
+.btn-control-plus {
+  background-image: url("../img/plus.png"); }
 
 .btn-full {
   width: 100%; }
