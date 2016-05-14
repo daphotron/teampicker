@@ -10,7 +10,11 @@
         <ul class="li-none li-inline center">
           <li class="align-center" ng-repeat="card in cards()">
             <div class="rcard animated flipInX {{card.color}} {{ card.revealed ? 'active flipInY' : '' }}" on-tap="revealCard(card)">
-              <span class="rcard-color">Team {{card.color}}<span class="alien center mts"></span></span>
+              <span class="rcard-color">
+                <div>Team</div>
+                {{card.color}}
+                <span class="alien center mts"></span>
+              </span>
             </div>
           </li>
         </ul>
