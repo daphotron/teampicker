@@ -10468,7 +10468,8 @@ html {
   padding: 25px 5px 0;
   position: absolute;
   text-align: center;
-  top: 0; }
+  top: 0;
+  width: 90px; }
 
 .active .rcard-color {
   display: block; }
