@@ -26,17 +26,20 @@ $ ionic emulate ios
 - ~~Restart remembering previously selected number of people and teams~~
 - ~~Selecting a card again flips the card back over again~~
 - ~~Number of teams are determined by number of colors defined~~
-- Selecting a card shows user the name of color they selected
-- Restart from defaults
+- ~~Selecting a card shows user the name of color they selected~~
+- ~~Visually flip cards over when tapped on~~
+- ~~Pick colors for teams at random~~
 - Zoom in on card when tapped on with a modal, tap modal to dismiss
-- Visually flip cards over when tapped on
 - Visually disable increment/decrement buttons when they can't be clicked further
+- Show the cards being generated underneath home screen
 
 ## Bugs
-- number of teams should not exceed number of people / 2
+- Restarting doesn't take you back to the top of the page
+- Number of teams should not exceed number of people / 2
 
 ## Design
 - ~~Fit 3 cards per row~~
 - ~~Center cards responsively~~
-- Improve animations upon selection
-- Select color palette for different team colors
+- ~~Improve animations upon selection~~
+- Make different aliens per color (need to make 10 diff aliens for the 10 colors)
+- Logo, mascot, patterns
