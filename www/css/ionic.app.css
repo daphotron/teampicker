@@ -9766,7 +9766,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'visitor', sans-serif; }
 
 .pane {
-  background: #0e0e0e;
+  background: #0B121A;
   color: #f1f1f1;
   font-size: 1em;
   letter-spacing: 1px;
@@ -10277,14 +10277,14 @@ html {
     margin-right: 0; } }
 
 .bar-super-dark {
-  background: #0e0e0e;
-  border-bottom: 0; }
+  background: #0B121A;
+  border-bottom: 1px solid #090E15; }
   .bar-super-dark .title {
     color: #f1f1f1; }
 
 .bar .header-logo {
   background: transparent url("../img/logo.png") no-repeat center bottom;
-  background-size: 200px;
+  background-size: 310px;
   font-size: 1.728em;
   letter-spacing: 2px;
   text-shadow: #34D233 2px 2px 3px; }
@@ -10441,6 +10441,9 @@ html {
   backface-visibility: visible !important;
   -webkit-animation-name: flipInY;
   animation-name: flipInY; }
+
+.pane {
+  background: #0B121A url("../img/bg.png") repeat top left; }
 
 .li-none {
   padding: 0; }

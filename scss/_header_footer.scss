@@ -1,7 +1,7 @@
 // HEADER
 .bar-super-dark {
-  background: #0e0e0e;
-  border-bottom: 0;
+  background: #0B121A;
+  border-bottom: 1px solid #090E15;
   .title {
     color: #f1f1f1;
   }
@@ -11,7 +11,7 @@
 // header
 .bar .header-logo {
   background: transparent url('../img/logo.png') no-repeat center bottom;
-  background-size: 200px;
+  background-size: 310px;
   font-size: $h2;
   letter-spacing: 2px;
   text-shadow: $green 2px 2px 3px;

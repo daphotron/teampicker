@@ -31,7 +31,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "buttons";
 @import "animations";
 
-
+.pane {
+  background: $darkestblue url('../img/bg.png') repeat top left;
+}
 // lists
 .li-none {
   padding: 0;
