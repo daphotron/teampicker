@@ -72,40 +72,73 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   display: block;
 }
 .alien {
-  background: transparent url('../img/alien.png') no-repeat top center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/alien.png');
   display: block;
-  height: 25px;
+  height: 35px;
   width: 45px;
 }
 
 // Colors
 .active.red {
   background: #6C0B0B;
+  .alien {
+    background-image: url('../img/alien-queen.png');
+  }
 }
 .active.blue {
   background: #205898;
+  .alien {
+    background-image: url('../img/alien-mtn.png');
+  }
 }
-.active.green{
+.active.green {
   background: #346929;
+  .alien {
+    background-image: url('../img/alien-frog.png');
+  }
 }
 .active.yellow {
   background: #BFB320;
+  .alien {
+    background-image: url('../img/alien-twin2.png');
+  }
 }
 .active.turquoiz {
   background: #43BFB5;
+  .alien {
+    background-image: url('../img/alien-kid.png');
+  }
 }
 .active.orange {
   background: #BF7A08;
+  .alien {
+    background-image: url('../img/alien-duck.png');
+  }
 }
 .active.purple {
   background: #612768;
+  .alien {
+    background-image: url('../img/alien-twin1.png');
+  }
 }
 .active.salmon {
   background: #AC2E25;
+  .alien {
+    background-image: url('../img/alien-guard.png');
+  }
 }
 .active.pink {
   background: #AA335C;
+  .alien {
+    background-image: url('../img/alien-skull.png');
+  }
 }
 .active.violet {
   background: #60329C;
+  .alien {
+    background-image: url('../img/alien-king.png');
+  }
 }
