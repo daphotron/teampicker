@@ -27,6 +27,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   $stateProvider
 
   .state('home', {
+    cache: false,
     url: '/',
     views: {
       "mainContent": {
@@ -37,6 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('secondary', {
+    cache: false,
     url: '/secondary',
     views: {
       "mainContent": {

@@ -34,7 +34,7 @@ $ ionic emulate ios
 - Show the cards being generated underneath home screen
 
 ## Bugs
-- Restarting doesn't take you back to the top of the page
+- ~~Restarting doesn't take you back to the top of the page~~
 - Number of teams should not exceed number of people / 2
 
 ## Design
