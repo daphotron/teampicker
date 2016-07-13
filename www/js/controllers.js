@@ -75,7 +75,18 @@ angular.module('starter.controllers', [])
     return CardsService.numberOfPeople;
   };
 
-  $scope.revealCard = function(card) {
+  $scope.revealCard = function(card, event) {
     card.revealed = !card.revealed;
+    if(card.revealed) {
+      var element = angular.element(event.target);
+      console.log(element.prop('offsetLeft'));
+      console.log(element.prop('offsetTop'));
+      $scope.blah=element.prop('offsetLeft');
+
+    }
+  }
+
+  $scope.something = function(){
+    return $scope.blah;
   }
 })

@@ -9,16 +9,19 @@
       <div class="row align-center mvs">
         <ul class="li-none li-inline center">
           <li class="align-center" ng-repeat="card in cards()">
-            <div class="rcard animated flipInX {{card.color}} {{ card.revealed ? 'active flipInY' : '' }}" on-tap="revealCard(card)">
+            <div class="crazy">
+            <div class="rcard animated flipInX {{card.color}} {{ card.revealed ? 'active flipInY' : '' }}" on-tap="revealCard(card,$event)">
               <span class="rcard-color">
                 <div>Team</div>
                 {{card.color}}
                 <span class="alien center mts"></span>
               </span>
             </div>
+            </div>
           </li>
         </ul>
       </div>
+      <div style="position:absolute;left:{{$scope.something()}}px;">asdasdasdasdasdsd</div>
       <div class="mtm mbl">
         There are {{ numberOfPeople() }} people and {{ numberOfTeams() }} teams.
       </div>
